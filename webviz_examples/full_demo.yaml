@@ -190,6 +190,15 @@ pages:
             - Perm
           nextend: 20
 
+  - title: Quality check realizations
+    content:
+      - QualityCheckRealizations:
+          ensembles:
+            - iter-0
+            - iter-1
+            - iter-2
+            - iter-3
+
   - title: How was this made?
     content:
       - Markdown:
