@@ -5,6 +5,7 @@ title: FMU (Fast Model Update) Webviz Example
 shared_settings:
   scratch_ensembles:
     sens_run: ../reek_fullmatrix/realization-*/iter-0
+    sim_map_run: ../reek_history_match/realization-?/iter-0
     iter-0: ../reek_history_match/realization-*/iter-0
     iter-1: ../reek_history_match/realization-*/iter-1
     iter-2: ../reek_history_match/realization-*/iter-2
@@ -65,7 +66,7 @@ pages:
     content:
       - In this example, the horizontal permeability is shown together with oil fluid flow for a given date during simulation.
       - SubsurfaceMap:
-          ensemble: iter-0
+          ensemble: sim_map_run
           map_value: PERMX
           flow_value: FLROIL
           time_step: 2
@@ -116,6 +117,15 @@ pages:
     content:
       - HistoryMatch:
           observation_file: ../reek_history_match/share/observations/observations.yml
+          ensembles:
+            - iter-0
+            - iter-1
+            - iter-2
+            - iter-3
+
+  - title: Parameter parallel coordinates
+    content:
+      - ParameterParallelCoordinates:
           ensembles:
             - iter-0
             - iter-1
