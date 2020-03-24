@@ -47,6 +47,7 @@ pages:
           volfiles:
             geogrid: geogrid--oil.csv
             simgrid: simgrid--oil.csv
+          fipfile: ../reek_history_match/share/regions/fip.yaml
 
   - title: Simulation time series
     content:
