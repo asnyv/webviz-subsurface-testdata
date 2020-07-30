@@ -137,7 +137,7 @@ pages:
   - title: Forward selected multiple regression between input parameters and responses
     content:
       - '# Forward selected multiple regression between input parameters and inplace volumes'
-      - MultipleRegression:
+      - ParameterResponseMultipleRegression:
           parameter_csv: ../aggregated_data/parameters_100_realizations.csv
           response_csv: ../aggregated_data/volumes_100_realizations.csv
           response_filters:
@@ -145,7 +145,7 @@ pages:
             REGION: multi
 
       - '# Forward selected multiple regression between input parameters and time series'
-      - MultipleRegression:
+      - ParameterResponseMultipleRegression:
           parameter_csv: ../aggregated_data/parameters_100_realizations.csv
           response_csv: ../aggregated_data/timeseries_100_realizations.csv
           response_filters:
@@ -154,7 +154,7 @@ pages:
   - title: Parameter parallel coordinates colored by responses
     content:
       - '# Parameter parallel coordinates colored by inplace volumes'
-      - ResponseParallelCoordinates:
+      - ParameterResponseParallelCoordinates:
           parameter_csv: ../aggregated_data/parameters_100_realizations.csv
           response_csv: ../aggregated_data/volumes_100_realizations.csv
           response_filters:
@@ -162,7 +162,7 @@ pages:
             REGION: multi
 
       - '# Parameter parallel coordinates colored by time series'
-      - ResponseParallelCoordinates:
+      - ParameterResponseParallelCoordinates:
           parameter_csv: ../aggregated_data/parameters_100_realizations.csv
           response_csv: ../aggregated_data/timeseries_100_realizations.csv
           response_filters:
