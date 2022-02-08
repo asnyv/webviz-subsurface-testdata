@@ -1,0 +1,20 @@
+title: SCAL viewer
+
+options:
+  menu:
+    show_logo: true
+    bar_position: left
+    drawer_position: left
+    initially_pinned: true
+    initially_collapsed: true
+
+layout:
+  - page: Relative permeability
+    content:
+      - RelativePermeability:
+          scalfile: ../01_drogon_ahm/realization-0/iter-0/rms/output/pyscal/pyscal_config_lowbasehigh.csv # /private/asny/webviz-subsurface-testdata/webviz_examples/../01_drogon_ahm/realization-0/iter-0/rms/output/pyscal/pyscal_config_lowbasehigh.csv
+
+  - page: How was this made (yaml config file)
+    content:
+      - SyntaxHighlighter:
+          filename: ./webviz-relperm.yml
